@@ -1,0 +1,19 @@
+{
+  "name": "bigstore",
+  "version": "1.0.0",
+  "description": "Big Store Application",
+  "main": "index.js",
+  "dependencies": {
+    "concurrently": "^4.1.1",
+    "dotenv": "^8.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "client": "cd client && npm start",
+    "server": "cd server && npm start",
+    "app": "concurrently \"npm run client\" \"npm run server\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client "
+  },
+  "author": "Mukul Kishore",
+  "license": "ISC"
+}
