@@ -5,6 +5,9 @@ const app = express();
 const passport = require("passport");
 const users = require("./routes/api/users");
 const path = require('path');
+const morgan = require("morgan");
+
+app.use(morgan("tiny")); 
 
 // Bodyparser middleware
 app.use(
