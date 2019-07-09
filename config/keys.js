@@ -1,4 +1,4 @@
 module.exports = {
-    mongoURI: "http://localhost:2707",
+    mongoURI: "mongodb://localhost:27017/BigStore",
     secretOrKey: "myCustomKeys"
 };
